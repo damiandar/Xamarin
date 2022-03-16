@@ -16,7 +16,7 @@ using System.Collections.Generic;
 
 namespace GettingStartedTutorial
 {
-    [Activity(Label = "GettingStartedTutorial", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "GettingStartedTutorial", MainLauncher = false, Icon = "@drawable/icon")]
     public class MainActivity : Activity, EMDKManager.IEMDKListener
     {
         private EMDKManager emdkManager = null;

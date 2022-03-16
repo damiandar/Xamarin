@@ -142,6 +142,9 @@ namespace GettingStartedTutorial
 			// aapt resource value: 0x7F040000
 			public const int Main = 2130968576;
 			
+			// aapt resource value: 0x7F040001
+			public const int SplashScreen = 2130968577;
+			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
