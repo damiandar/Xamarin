@@ -63,7 +63,25 @@ namespace GettingStartedTutorial
 		{
 			
 			// aapt resource value: 0x7F020000
-			public const int Icon = 2130837504;
+			public const int bascula = 2130837504;
+			
+			// aapt resource value: 0x7F020001
+			public const int buscar = 2130837505;
+			
+			// aapt resource value: 0x7F020002
+			public const int camionreparto = 2130837506;
+			
+			// aapt resource value: 0x7F020003
+			public const int codigobarras = 2130837507;
+			
+			// aapt resource value: 0x7F020004
+			public const int distribucion = 2130837508;
+			
+			// aapt resource value: 0x7F020005
+			public const int escaneo = 2130837509;
+			
+			// aapt resource value: 0x7F020006
+			public const int Icon = 2130837510;
 			
 			static Drawable()
 			{
@@ -84,26 +102,29 @@ namespace GettingStartedTutorial
 			// aapt resource value: 0x7F030001
 			public const int DataViewTxt = 2130903041;
 			
+			// aapt resource value: 0x7F030003
+			public const int imageButton1 = 2130903043;
+			
 			// aapt resource value: 0x7F030002
 			public const int MyButton = 2130903042;
 			
-			// aapt resource value: 0x7F030003
-			public const int scrollView2 = 2130903043;
-			
 			// aapt resource value: 0x7F030004
-			public const int statusView = 2130903044;
+			public const int scrollView2 = 2130903044;
 			
 			// aapt resource value: 0x7F030005
-			public const int statusViewTitle = 2130903045;
+			public const int statusView = 2130903045;
 			
 			// aapt resource value: 0x7F030006
-			public const int statusViewTxt = 2130903046;
+			public const int statusViewTitle = 2130903046;
 			
 			// aapt resource value: 0x7F030007
-			public const int textView = 2130903047;
+			public const int statusViewTxt = 2130903047;
 			
 			// aapt resource value: 0x7F030008
-			public const int textViewStatus = 2130903048;
+			public const int textView = 2130903048;
+			
+			// aapt resource value: 0x7F030009
+			public const int textViewStatus = 2130903049;
 			
 			static Id()
 			{
