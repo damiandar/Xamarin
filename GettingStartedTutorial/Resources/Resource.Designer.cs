@@ -40,11 +40,30 @@ namespace GettingStartedTutorial
 			}
 		}
 		
-		public partial class Drawable
+		public partial class Dimension
 		{
 			
 			// aapt resource value: 0x7F010000
-			public const int Icon = 2130771968;
+			public const int activity_horizontal_margin = 2130771968;
+			
+			// aapt resource value: 0x7F010001
+			public const int activity_vertical_margin = 2130771969;
+			
+			static Dimension()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Dimension()
+			{
+			}
+		}
+		
+		public partial class Drawable
+		{
+			
+			// aapt resource value: 0x7F020000
+			public const int Icon = 2130837504;
 			
 			static Drawable()
 			{
@@ -59,11 +78,32 @@ namespace GettingStartedTutorial
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7F020000
-			public const int MyButton = 2130837504;
+			// aapt resource value: 0x7F030000
+			public const int DataViewTitle = 2130903040;
 			
-			// aapt resource value: 0x7F020001
-			public const int textViewStatus = 2130837505;
+			// aapt resource value: 0x7F030001
+			public const int DataViewTxt = 2130903041;
+			
+			// aapt resource value: 0x7F030002
+			public const int MyButton = 2130903042;
+			
+			// aapt resource value: 0x7F030003
+			public const int scrollView2 = 2130903043;
+			
+			// aapt resource value: 0x7F030004
+			public const int statusView = 2130903044;
+			
+			// aapt resource value: 0x7F030005
+			public const int statusViewTitle = 2130903045;
+			
+			// aapt resource value: 0x7F030006
+			public const int statusViewTxt = 2130903046;
+			
+			// aapt resource value: 0x7F030007
+			public const int textView = 2130903047;
+			
+			// aapt resource value: 0x7F030008
+			public const int textViewStatus = 2130903048;
 			
 			static Id()
 			{
@@ -78,8 +118,8 @@ namespace GettingStartedTutorial
 		public partial class Layout
 		{
 			
-			// aapt resource value: 0x7F030000
-			public const int Main = 2130903040;
+			// aapt resource value: 0x7F040000
+			public const int Main = 2130968576;
 			
 			static Layout()
 			{
@@ -94,11 +134,17 @@ namespace GettingStartedTutorial
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7F040000
-			public const int ApplicationName = 2130968576;
+			// aapt resource value: 0x7F050000
+			public const int ApplicationName = 2131034112;
 			
-			// aapt resource value: 0x7F040001
-			public const int Hello = 2130968577;
+			// aapt resource value: 0x7F050002
+			public const int dataView_text = 2131034114;
+			
+			// aapt resource value: 0x7F050001
+			public const int Hello = 2131034113;
+			
+			// aapt resource value: 0x7F050003
+			public const int statusView_text = 2131034115;
 			
 			static String()
 			{
