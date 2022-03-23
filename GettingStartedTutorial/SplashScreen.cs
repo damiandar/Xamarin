@@ -18,8 +18,9 @@ namespace GettingStartedTutorial
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
+         
             base.OnCreate(savedInstanceState);
-
+            ActionBar.Hide();
             // Create your application here
             SetContentView(Resource.Layout.SplashScreen);
             // Create your application here

@@ -42,7 +42,7 @@ namespace GettingStartedTutorial
 
             // Get our button from the layout resource,
             // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.MyButton);
+            ImageButton button = FindViewById<ImageButton>(Resource.Id.MyButton);
 
             button.Click += delegate { ApplyProfile(); };
 
@@ -58,8 +58,6 @@ namespace GettingStartedTutorial
             {
                 tvStatus.Text = "Status: EMDKManager object creation succeeded ...";
             }
-
-          
 
       
         }

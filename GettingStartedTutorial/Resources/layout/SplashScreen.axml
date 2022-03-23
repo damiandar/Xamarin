@@ -5,7 +5,7 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:padding="15dp"
 android:gravity="center_vertical"
-android:background="#33FF9C"
+android:background="#33FF9C" 
 android:foregroundGravity="center_vertical">
 <ImageView
 android:src="@drawable/escaneo"
