@@ -97,34 +97,46 @@ namespace GettingStartedTutorial
 		{
 			
 			// aapt resource value: 0x7F030000
-			public const int DataViewTitle = 2130903040;
-			
-			// aapt resource value: 0x7F030001
-			public const int DataViewTxt = 2130903041;
-			
-			// aapt resource value: 0x7F030003
-			public const int imageButton1 = 2130903043;
+			public const int DataViewTxt = 2130903040;
 			
 			// aapt resource value: 0x7F030002
-			public const int MyButton = 2130903042;
+			public const int imageButton1 = 2130903042;
+			
+			// aapt resource value: 0x7F030003
+			public const int imageButton2 = 2130903043;
 			
 			// aapt resource value: 0x7F030004
-			public const int scrollView2 = 2130903044;
+			public const int imageButton3 = 2130903044;
 			
 			// aapt resource value: 0x7F030005
-			public const int statusView = 2130903045;
+			public const int imageButton4 = 2130903045;
 			
 			// aapt resource value: 0x7F030006
-			public const int statusViewTitle = 2130903046;
+			public const int imageButton5 = 2130903046;
 			
 			// aapt resource value: 0x7F030007
-			public const int statusViewTxt = 2130903047;
+			public const int lblTituloData = 2130903047;
 			
 			// aapt resource value: 0x7F030008
-			public const int textView = 2130903048;
+			public const int lblTituloEstado = 2130903048;
+			
+			// aapt resource value: 0x7F030001
+			public const int MyButton = 2130903041;
 			
 			// aapt resource value: 0x7F030009
-			public const int textViewStatus = 2130903049;
+			public const int scrollView2 = 2130903049;
+			
+			// aapt resource value: 0x7F03000A
+			public const int statusView = 2130903050;
+			
+			// aapt resource value: 0x7F03000B
+			public const int statusViewTxt = 2130903051;
+			
+			// aapt resource value: 0x7F03000C
+			public const int tbEstadoPerfil = 2130903052;
+			
+			// aapt resource value: 0x7F03000D
+			public const int textView = 2130903053;
 			
 			static Id()
 			{
@@ -140,10 +152,13 @@ namespace GettingStartedTutorial
 		{
 			
 			// aapt resource value: 0x7F040000
-			public const int Main = 2130968576;
+			public const int Botonera = 2130968576;
 			
 			// aapt resource value: 0x7F040001
-			public const int SplashScreen = 2130968577;
+			public const int Main = 2130968577;
+			
+			// aapt resource value: 0x7F040002
+			public const int SplashScreen = 2130968578;
 			
 			static Layout()
 			{

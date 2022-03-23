@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:src="@drawable/bascula"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:id="@+id/imageButton1"  
+        />
+    <ImageButton
+        android:src="@drawable/codigobarras"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:id="@+id/imageButton2" 
+        />
+    <ImageButton
+        android:src="@drawable/buscar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:id="@+id/imageButton3" 
+        />
+    <ImageButton
+        android:src="@drawable/distribucion"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:id="@+id/imageButton4" 
+        />
+    <ImageButton
+        android:src="@drawable/camionreparto"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:id="@+id/imageButton5" 
+        />
+</LinearLayout>

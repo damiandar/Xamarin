@@ -3,6 +3,6 @@
     <string name="Hello">Hello World, Click Me!</string>
     <string name="ApplicationName">GettingStartedTutorial</string> 
 
-  <string name="statusView_text">Status:</string>
-  <string name="dataView_text">Data:</string>
+  <string name="statusView_text">Estado:</string>
+  <string name="dataView_text">Datos:</string>
 </resources>
