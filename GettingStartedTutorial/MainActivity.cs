@@ -16,7 +16,7 @@ using System.Collections.Generic;
 
 namespace GettingStartedTutorial
 {
-    [Activity(Label = "GettingStartedTutorial", MainLauncher = false, Icon = "@drawable/icon")]
+    [Activity(Label = "Expoyer", MainLauncher = false, Icon = "@drawable/icon")]
     public class MainActivity : Activity, EMDKManager.IEMDKListener
     {
         private EMDKManager emdkManager = null;
@@ -152,7 +152,7 @@ namespace GettingStartedTutorial
                 EMDKResults results = profileManager.ProcessProfile(profileName, ProfileManager.PROFILE_FLAG.Set, new String[] { "" });
                 if (results.StatusCode == EMDKResults.STATUS_CODE.Success)
                 {
-                    tvStatus.Text = "Status: Profile applied successfully ...";
+                    tvStatus.Text = "Status: Perfil aplicado satisfactoriamente ...";
                 }
                 else if (results.StatusCode == EMDKResults.STATUS_CODE.CheckXml)
                 {
@@ -331,19 +331,19 @@ namespace GettingStartedTutorial
             }
             if (state == StatusData.ScannerStates.Waiting)
             {
-                statusStr = "Waiting for Trigger Press to scan";
+                statusStr = "Estado: Esperando que aprete el gatillo para scanear";
             }
             if (state == StatusData.ScannerStates.Scanning)
             {
-                statusStr = "Scanning in progress...";
+                statusStr = "Estado: Scanneando in progreso...";
             }
             if (state == StatusData.ScannerStates.Disabled)
             {
-                statusStr = "Scanner disabled";
+                statusStr = "Estado: Scanner disabled";
             }
             if (state == StatusData.ScannerStates.Error)
             {
-                statusStr = "Error occurred during scanning";
+                statusStr = "Error: occurrio un error durante el scanneo";
 
             }
             displayStatus(statusStr);

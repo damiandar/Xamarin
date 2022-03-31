@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="GettingStartedTutorial.GettingStartedTutorial" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
 	<uses-sdk android:minSdkVersion="23" android:targetSdkVersion="24" />
 	<uses-permission android:name="com.symbol.emdk.permission.EMDK" />
-	<application android:label="GettingStartedTutorial" android:icon="@drawable/Icon">
+	<application android:label="Expoyer APP" android:icon="@drawable/Icon">
 		<uses-library android:name="com.symbol.emdk"  android:required="false"  />
 	</application>
 </manifest>

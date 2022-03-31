@@ -5,4 +5,5 @@
 
   <string name="statusView_text">Estado:</string>
   <string name="dataView_text">Datos:</string>
+  <string name="status_text">Status:</string>
 </resources>

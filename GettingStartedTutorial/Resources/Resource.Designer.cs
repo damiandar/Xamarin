@@ -81,7 +81,10 @@ namespace GettingStartedTutorial
 			public const int escaneo = 2130837509;
 			
 			// aapt resource value: 0x7F020006
-			public const int Icon = 2130837510;
+			public const int expoyerlogo = 2130837510;
+			
+			// aapt resource value: 0x7F020007
+			public const int Icon = 2130837511;
 			
 			static Drawable()
 			{
@@ -184,6 +187,9 @@ namespace GettingStartedTutorial
 			
 			// aapt resource value: 0x7F050003
 			public const int statusView_text = 2131034115;
+			
+			// aapt resource value: 0x7F050004
+			public const int status_text = 2131034116;
 			
 			static String()
 			{
