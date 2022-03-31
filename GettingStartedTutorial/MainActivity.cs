@@ -94,7 +94,7 @@ namespace GettingStartedTutorial
 
         void EMDKManager.IEMDKListener.OnOpened(EMDKManager emdkManager)
         {
-            tvStatus.Text = "Status: EMDK Opened successfully ...";
+            tvStatus.Text = "Estado: EMDK funcionando correctamente ...";
 
             this.emdkManager = emdkManager;
             InitScanner();
@@ -316,7 +316,7 @@ namespace GettingStartedTutorial
 
             if (state == StatusData.ScannerStates.Idle)
             {
-                statusStr = "Scanner is idle and ready to submit read.";
+                statusStr = "El escáner está inactivo y listo para leer.";
                 try
                 {
                     if (scanner.IsEnabled && !scanner.IsReadPending)
@@ -331,19 +331,20 @@ namespace GettingStartedTutorial
             }
             if (state == StatusData.ScannerStates.Waiting)
             {
-                statusStr = "Estado: Esperando que aprete el gatillo para scanear";
+                statusStr = "Aprete el gatillo para escanear";
+               
             }
             if (state == StatusData.ScannerStates.Scanning)
             {
-                statusStr = "Estado: Scanneando in progreso...";
+                statusStr = "Escaneando en progreso...";
             }
             if (state == StatusData.ScannerStates.Disabled)
             {
-                statusStr = "Estado: Scanner disabled";
+                statusStr = "Scanner disabled";
             }
             if (state == StatusData.ScannerStates.Error)
             {
-                statusStr = "Error: occurrio un error durante el scanneo";
+                statusStr = "Error: occurrio un error durante el escaneo";
 
             }
             displayStatus(statusStr);

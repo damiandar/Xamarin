@@ -27,7 +27,7 @@ namespace GettingStartedTutorial
             Task.Run(() => {
                 Thread.Sleep(3000); // Simulate a long loading process on app startup.
                 RunOnUiThread(() => {
-                    StartActivity(typeof(MainActivity));
+                    StartActivity(typeof(MenuActivity));
                 });
             });
         

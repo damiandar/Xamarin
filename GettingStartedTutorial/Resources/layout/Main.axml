@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -23,21 +24,29 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="0.0dp" 
          />
-    <TextView
-        android:id="@+id/lblTituloEstado" 
-        android:layout_width="48dp"
-        android:layout_height="15dp"
-        android:text="@string/statusView_text"
-        android:layout_below="@+id/textView"
-        android:layout_marginTop="20dp"/>
-    <TextView
-        android:id="@+id/statusViewTxt"
-        android:layout_width="68dp"
-        android:layout_height="15dp"
-        android:text=""
-        android:layout_below="@+id/lblTituloEstado"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1" >
+        <TextView
+            android:id="@+id/lblTituloEstado"
+            android:layout_width="48dp"
+            android:layout_height="15dp"
+            android:text="@string/statusView_text"  
+        />
+        <TextView
+            android:id="@+id/statusViewTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="" 
          />
+    </LinearLayout>
+
     <TextView
         android:id="@+id/lblTituloData"
         android:layout_width="wrap_content"
@@ -48,7 +57,7 @@
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="300dp"
-        android:layout_height="120dp" 
+        android:layout_height="190dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
@@ -62,8 +71,5 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </ScrollView>
-    <include
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        layout="@layout/botonera" />
+
 </LinearLayout>

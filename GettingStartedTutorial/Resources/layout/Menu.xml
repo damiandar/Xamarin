@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Seleccione la opción:" 
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:id="@+id/textView1" />
+    
+        <GridLayout
+        android:minWidth="@dimen/boton_menu"
+        android:minHeight="@dimen/boton_menu"
+        android:rowCount="2"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gridLayout1" >
+    
+     <ImageButton
+        android:src="@drawable/bascula"
+        android:layout_width="@dimen/boton_menu"
+        android:layout_height="@dimen/boton_menu"   
+        android:layout_gravity="left|top"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:id="@+id/imageButton1"  
+        />
+    <ImageButton
+        android:src="@drawable/codigobarras"
+        android:layout_width="@dimen/boton_menu"
+        android:layout_height="@dimen/boton_menu"
+        android:layout_gravity="left|top"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:id="@+id/imageButton2" 
+        />
+    <ImageButton
+        android:src="@drawable/buscar"
+        android:layout_width="@dimen/boton_menu"
+        android:layout_height="@dimen/boton_menu"
+        android:layout_gravity="left|top"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:id="@+id/imageButton3" 
+        />
+    <ImageButton
+        android:src="@drawable/distribucion"
+        android:layout_width="@dimen/boton_menu"
+        android:layout_height="@dimen/boton_menu"
+        android:layout_gravity="left|top"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:id="@+id/imageButton4" 
+        />
+    <ImageButton
+        android:src="@drawable/camionreparto"
+        android:layout_width="@dimen/boton_menu"
+        android:layout_height="@dimen/boton_menu"
+        android:layout_gravity="left|top"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true" 
+        android:id="@+id/imageButton5" 
+        />
+     <ImageButton
+        android:src="@drawable/escaneo"
+        android:layout_width="@dimen/boton_menu"
+        android:layout_height="@dimen/boton_menu"
+        android:layout_gravity="left|top"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true" 
+        android:id="@+id/imageButton6" 
+        />
+    </GridLayout>
+</LinearLayout>
