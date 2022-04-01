@@ -139,19 +139,22 @@ namespace GettingStartedTutorial
 			public const int MyButton = 2130903041;
 			
 			// aapt resource value: 0x7F03000C
-			public const int scrollView2 = 2130903052;
+			public const int resultado = 2130903052;
 			
 			// aapt resource value: 0x7F03000D
-			public const int statusView = 2130903053;
+			public const int scrollView2 = 2130903053;
 			
 			// aapt resource value: 0x7F03000E
-			public const int statusViewTxt = 2130903054;
+			public const int statusView = 2130903054;
 			
 			// aapt resource value: 0x7F03000F
-			public const int tbEstadoPerfil = 2130903055;
+			public const int statusViewTxt = 2130903055;
 			
 			// aapt resource value: 0x7F030010
-			public const int textView1 = 2130903056;
+			public const int tbEstadoPerfil = 2130903056;
+			
+			// aapt resource value: 0x7F030011
+			public const int textView1 = 2130903057;
 			
 			static Id()
 			{
