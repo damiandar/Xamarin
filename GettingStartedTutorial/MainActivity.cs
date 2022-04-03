@@ -13,6 +13,9 @@ using System.Xml;
 using System.IO;
 
 using System.Collections.Generic;
+using System.Net.Http;
+using Newtonsoft.Json;
+using System.Text;
 
 namespace GettingStartedTutorial
 {
@@ -302,6 +305,7 @@ namespace GettingStartedTutorial
 
                 foreach (ScanDataCollection.ScanData data in scanData)
                 {
+                    EnviarPostLocal(0, data.LabelType.ToString(), data.Data);
                     displaydata(data.LabelType + " : " + data.Data);
                 }
             }
@@ -353,7 +357,37 @@ namespace GettingStartedTutorial
         #endregion
 
 
+        private async void EnviarPostLocal(int id, string codigo, string tipo)
+        {
+            using (var client = new HttpClient())
+            {
+                // Create a new post  
+                var novoPost = new Producto
+                {
+                    Codigo = codigo,
+                    Tipo = tipo
+                };
 
+                // create the request content and define Json  
+                var json = JsonConvert.SerializeObject(novoPost);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+                //  send a POST request  
+                var uri = "https://webappexpoyer.azurewebsites.net/productos";
+                var result = await client.PostAsync(uri, content);
+
+                // on error throw a exception  
+                result.EnsureSuccessStatusCode();
+                /* Esto esta comentado por si recibe un resultado
+                // handling the answer  
+                var resultString = await result.Content.ReadAsStringAsync();
+                var post = JsonConvert.DeserializeObject<Post>(resultString);
+
+                // display the output in TextView  
+                resultado.Text = post.ToString();
+                */
+            }
+        }
 
 
 

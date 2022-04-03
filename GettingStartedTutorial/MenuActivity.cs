@@ -77,15 +77,15 @@ namespace GettingStartedTutorial
             using (var client = new HttpClient())
             {
                 // send a GET request  
-                var uri = "http://localhost:5000/productos";
+                var uri = "https://webappexpoyer.azurewebsites.net/productos";
                 var result = await client.GetStringAsync(uri);
 
                 //handling the answer  
                 var posts = JsonConvert.DeserializeObject<List<Producto>>(result);
 
                 // generate the output  
-                var post = posts.First();
-                resultado.Text = "First post:\n\n" + post;
+                var post = posts.Last();
+                resultado.Text = "First post:\n\n" + post.Codigo;
             }
         }
 
@@ -96,7 +96,6 @@ namespace GettingStartedTutorial
                 // Create a new post  
                 var novoPost = new Producto
                 {
-                    Id = id,
                     Codigo = codigo,
                     Tipo = tipo
                 };
@@ -106,18 +105,19 @@ namespace GettingStartedTutorial
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
 
                 //  send a POST request  
-                var uri = "http://localhost:5000/productos";
+                var uri = "https://webappexpoyer.azurewebsites.net/productos";
                 var result = await client.PostAsync(uri, content);
 
                 // on error throw a exception  
                 result.EnsureSuccessStatusCode();
-
+                /* Esto esta comentado por si recibe un resultado
                 // handling the answer  
                 var resultString = await result.Content.ReadAsStringAsync();
                 var post = JsonConvert.DeserializeObject<Post>(resultString);
 
                 // display the output in TextView  
                 resultado.Text = post.ToString();
+                */
             }
         }
         private async void RecibirGet() {
